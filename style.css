@@ -1,0 +1,45 @@
+@font-face {
+  src: url(https://www.nvidia.com/etc/designs/nvidiaIntegrations/clientlibs_base/fonts/DINPro-Regular.woff?1559939961);
+  font-family: 'DINPro';
+  font-weight: 200;
+} 
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.bg-notificacao {
+  float: right;
+  margin-top: 5rem;
+  background: #77b901;
+  width: 225px;
+  transition: 0.2s;
+  height: 68px;
+}
+.bg-notificacao .notificacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  width: 225px;
+  height: 68px;
+  transition: 0.5s;
+}
+.bg-notificacao .notificacao .icon {
+  padding: 10px;
+}
+.bg-notificacao .notificacao .icon svg {
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  transition: opacity 3s;
+  padding-top: 5px;
+  fill: #77b901;
+}
+.bg-notificacao .notificacao .texto {
+  font-family: 'DINPro';
+  opacity: 0;
+  transition: opacity 3s;
+  font-size: 13px;
+  color: white;
+}
