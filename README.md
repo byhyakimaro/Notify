@@ -9,7 +9,7 @@
 Site Example - [Examples](https://notify.knownetworkssec.repl.co)
 
 ```js
-addNotify = createNotify({
+addNotify = new createNotify({
 	verified: false,
 	color: "#ccc",
 	texto: "A gravação foi deletada",
