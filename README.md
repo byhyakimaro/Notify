@@ -4,4 +4,4 @@
 
 * Example
 
-![Alt Text](https://i.imgur.com/8X5YupK.gif)
+![Alt Text](https://i.imgur.com/eBSC9Zl.gif)
