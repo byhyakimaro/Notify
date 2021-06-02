@@ -1,6 +1,6 @@
 // Example FactoryObject
 
-function createNotify({color, correct, texto}) {
+function createNotify({color, verified, texto}) {
 	const bg_notificacao = $('.bg-notificacao');
 	const notificacao = $('.notificacao');
 	const check = 'M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z';
@@ -10,18 +10,18 @@ function createNotify({color, correct, texto}) {
 		$('.texto').html(texto);
 		$('svg').css('fill', color);
 		bg_notificacao.css('background', color);
-		$('path').attr('d',correct ? check : closed);
+		$('path').attr('d',verified ? check : closed);
 		bg_notificacao.style.transform = "translateX(240px)";
 		notificacao.style.transform = "translateX(240px)";
 		await sleep(1000);
 		bg_notificacao.style.transform = "translateX(0px)";
 		notificacao.style.transform = "translateX(4px)";
 	};
-	return { color, correct, texto, create };
+	return { color, verified, texto, create };
 }
 
 let addNotify = createNotify({
-	correct: true,
+	verified: true,
 	color: "#77b901",
 	texto: "A gravação foi salva",
 });
