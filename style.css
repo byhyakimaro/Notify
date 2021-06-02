@@ -30,13 +30,11 @@
 .bg-notificacao .notificacao .icon svg {
   width: 30px;
   height: 30px;
-  opacity: 0;
   transition: opacity 3s;
   padding-top: 5px;
 }
 .bg-notificacao .notificacao .texto {
   font-family: 'DINPro';
-  opacity: 0;
   transition: opacity 3s;
   font-size: 13px;
   color: white;
