@@ -9,6 +9,7 @@
   user-select: none;
 }
 .bg-notificacao {
+  display: none;
   float: right;
   margin-top: 5rem;
   width: 225px;
