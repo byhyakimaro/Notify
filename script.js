@@ -22,6 +22,7 @@ class createNotify {
 		await sleep(1000);
 		bg_notificacao.style.transform = "translateX(0px)";
 		notificacao.style.transform = "translateX(4px)";
+		bg_notificacao.css('display', "block");
 	}
 };
 
